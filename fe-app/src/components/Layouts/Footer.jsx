@@ -9,11 +9,7 @@ const Footer = () => {
 					{/* Brand Column */}
 					<div className="space-y-6">
 						<Link to="/" className="flex items-center gap-2">
-							<img
-								src="src/assets/images/logo.jpg"
-								alt="Logo"
-								className="h-10 w-auto"
-							/>
+							<img src="logo.jpg" alt="Logo" className="h-10 w-auto" />
 						</Link>
 						<p className="text-gray-600 text-sm">
 							Cung cấp các giải pháp công nghệ hiện đại cho doanh nghiệp của
