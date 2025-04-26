@@ -25,7 +25,14 @@ const Header = () => {
 								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
 							</Link>
 							<Link
-								to="/blog"
+								to="/courses"
+								className="relative text-gray-700 hover:text-[#591ab1] transition-colors duration-300 group text-[18px] font-normal"
+							>
+								Course
+								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+							</Link>
+							<Link
+								to="/blogs"
 								className="relative text-gray-700 hover:text-[#591ab1] transition-colors duration-300 group text-[18px] font-normal"
 							>
 								Blog
@@ -46,7 +53,7 @@ const Header = () => {
 							<input
 								type="text"
 								placeholder="Search..."
-								className="w-full pl-4 pr-10 py-2 border border-[#591ab1] rounded-full focus:outline-none focus:ring-1 focus:ring-primary focus:border-[#591ab1] transition-all duration-300"
+								className="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-1 focus:ring-primary focus:border-[#591ab1] transition-all duration-300"
 							/>
 							<button
 								type="submit"

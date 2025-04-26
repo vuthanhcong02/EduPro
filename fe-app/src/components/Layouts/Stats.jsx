@@ -23,7 +23,6 @@ export default function Stats() {
 					))}
 				</dl>
 			</div>
-			<div className="h-2 w-md bg-color-primary mt-20 mx-auto rounded-full"></div>
 		</div>
 	);
 }

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
-		<footer className="bg-white border-t border-gray-100 mt-20">
-			<div className="mx-40 px-6 py-4 lg:px-8">
+		<footer className="bg-white border-t border-gray-300 mt-30">
+			<div className="mx-40 px-6 pt-20 pb-10 lg:px-8">
 				{/* Footer Content */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 					{/* Brand Column */}
@@ -209,32 +209,31 @@ const Footer = () => {
 						</ul>
 					</div>
 				</div>
-
-				{/* Copyright */}
-				<div className="mt-16 pt-4 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
-					<p className="text-sm text-gray-500">
-						&copy; {new Date().getFullYear()} CodeCungTo. All rights reserved.
-					</p>
-					<div className="flex space-x-6 mt-4 md:mt-0">
-						<Link
-							to="/terms"
-							className="text-sm text-gray-500 hover:text-primary transition-colors"
-						>
-							Điều khoản
-						</Link>
-						<Link
-							to="/privacy"
-							className="text-sm text-gray-500 hover:text-primary transition-colors"
-						>
-							Bảo mật
-						</Link>
-						<Link
-							to="/cookies"
-							className="text-sm text-gray-500 hover:text-primary transition-colors"
-						>
-							Cookies
-						</Link>
-					</div>
+			</div>
+			{/* Copyright */}
+			<div className="mx-40 py-4 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
+				<p className="text-sm text-gray-500">
+					&copy; {new Date().getFullYear()} CodeCungTo. All rights reserved.
+				</p>
+				<div className="flex space-x-6 mt-4 md:mt-0">
+					<Link
+						to="/terms"
+						className="text-sm text-gray-500 hover:text-primary transition-colors"
+					>
+						Điều khoản
+					</Link>
+					<Link
+						to="/privacy"
+						className="text-sm text-gray-500 hover:text-primary transition-colors"
+					>
+						Bảo mật
+					</Link>
+					<Link
+						to="/cookies"
+						className="text-sm text-gray-500 hover:text-primary transition-colors"
+					>
+						Cookies
+					</Link>
 				</div>
 			</div>
 		</footer>

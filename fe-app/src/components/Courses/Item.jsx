@@ -2,7 +2,17 @@ import { CiStar } from "react-icons/ci";
 
 export const ItemCourse = ({ course }) => {
 	return (
-		<div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 max-w-[300px] max-h-[385px]">
+		// <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 max-w-[300px] max-h-[385px]">
+		<div
+			className="bg-white rounded-xl shadow-md overflow-hidden 
+               hover:shadow-xl transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+               hover:-translate-y-2 hover:scale-[1.02] active:scale-95
+               max-w-[300px] max-h-[385px] relative group
+               border border-gray-100 hover:border-primary/20
+               before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/5 before:to-transparent 
+               before:opacity-0 before:transition-opacity before:duration-500
+               hover:before:opacity-100"
+		>
 			{/* Course Image */}
 			<div className="relative h-48 overflow-hidden">
 				<img
