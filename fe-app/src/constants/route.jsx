@@ -5,4 +5,5 @@ export const ROUTES = {
 	NOTFOUND: "*",
 	LOGIN: "/login",
 	REGISTER: "/register",
+	CONTACT: "/contact",
 };
