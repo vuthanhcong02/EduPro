@@ -3,6 +3,8 @@ import Banner from "../components/Layouts/Banner";
 import Stats from "../components/Layouts/Stats";
 import ListCourse from "../components/Courses/List";
 import ListBlog from "../components/Blog/List";
+import { Link } from "react-router-dom";
+import { ROUTES } from "../constants/route";
 
 export default function Home() {
 	return (
@@ -19,9 +21,12 @@ export default function Home() {
 				<div className="mt-12">
 					<ListCourse />
 					<div className="text-center mt-16">
-						<button className="px-10 py-4 rounded-[8px] border-gray-300 border hover:bg-[#591ab1] text-[#591ab1] hover:text-white transition-colors duration-300">
+						<Link
+							to={ROUTES.COURSES}
+							className="px-10 py-4 rounded-[8px] border-gray-300 border hover:bg-[#591ab1] text-[#591ab1] hover:text-white transition-colors duration-300"
+						>
 							Xem tất cả
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>
@@ -35,9 +40,12 @@ export default function Home() {
 				<div className="mt-12">
 					<ListBlog />
 					<div className="text-center mt-16">
-						<button className="px-10 py-4 rounded-[8px] border-gray-300 border hover:bg-[#591ab1] text-[#591ab1] hover:text-white transition-colors duration-300">
+						<Link
+							to={ROUTES.BLOGS}
+							className="px-10 py-4 rounded-[8px] border-gray-300 border hover:bg-[#591ab1] text-[#591ab1] hover:text-white transition-colors duration-300"
+						>
 							Xem tất cả
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>
